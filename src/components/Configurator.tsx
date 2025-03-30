@@ -16,7 +16,7 @@ import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
-import { Cpu, Gpu, HardDrive, Monitor, Package, ShieldCheck, Truck } from 'lucide-react';
+import { Cpu, Monitor, HardDrive, Package, ShieldCheck, Truck, VideoIcon } from 'lucide-react';
 import { PCComponent, ComponentType } from '@/types';
 import { 
   cpuComponents, 
@@ -93,7 +93,7 @@ const Configurator: React.FC = () => {
   // List of configurable component categories
   const componentCategories = [
     { type: 'cpu', label: 'Процессор', icon: <Cpu className="h-5 w-5" /> },
-    { type: 'gpu', label: 'Видеокарта', icon: <Gpu className="h-5 w-5" /> },
+    { type: 'gpu', label: 'Видеокарта', icon: <VideoIcon className="h-5 w-5" /> },
     { type: 'motherboard', label: 'Материнская плата', icon: <Package className="h-5 w-5" /> },
     // Additional categories would be added here
   ];
